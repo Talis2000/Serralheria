@@ -1,0 +1,215 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo do site */
+body {
+    background-color: #2f2f2f; /* Cor de fundo escura (carbono) */
+    color: #f0e1a1; /* Cor do texto (bronze suave) */
+    line-height: 1.6;
+    padding-top: 80px; /* Espaço para o menu fixo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3e3e3e; /* Tom mais escuro de carbono */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    color: #c59d5f; /* Cor bronze para o logo */
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Menu de navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center; /* Garante o alinhamento vertical dos itens no menu */
+    margin-top: 20px;
+}
+
+/* Estilo para os itens de menu */
+nav ul li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #f0e1a1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c59d5f;
+    background-color: #4e4e4e; /* Cor de fundo no hover */
+}
+
+nav ul li a img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    object-fit: contain;
+}
+
+nav ul li a:last-child {
+    margin-right: 0;
+}
+
+/* Banner */
+.banner {
+    background-color: #3e3e3e;
+    color: #f0e1a1;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Serviços */
+.servicos {
+    background-color: #4f4f4f;
+    text-align: center;
+}
+
+.servico-item {
+    background-color: #5c5c5c;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.servico-item:hover {
+    background-color: #3e3e3e;
+}
+
+.servico-item h3 {
+    color: #c59d5f;
+    font-size: 1.5rem;
+}
+
+.servico-item p {
+    color: #f0e1a1;
+    font-size: 1rem;
+}
+
+.servico-item img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    loading: lazy; /* Aqui já foi removido do CSS e colocado no HTML */
+}
+
+.servico-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Sobre */
+.sobre {
+    background-color: #3e3e3e;
+    text-align: center;
+    color: #f0e1a1;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+/* Formulário de Contato */
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.contato button {
+    background-color: #c59d5f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contato button:hover {
+    background-color: #d4a45b;
+    transform: scale(1.05);
+}
+
+/* Feedback do Formulário */
+#feedback {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Botão flutuante WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.whatsapp-float img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #3e3e3e;
+    color: #f0e1a1;
+    text-align: center;
+    padding: 20px;
+}
